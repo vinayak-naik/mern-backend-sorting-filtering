@@ -100,7 +100,7 @@ const BootcampsPage = () => {
 
         const { data } = await axios({
           method: "GET",
-          url: `https://dashboard.heroku.com/apps/mern-backend-sorting-filtering/test`,
+          url: `https://mern-backend-sorting-filtering.herokuapp.com/api/v1/bootcamps${query}`,
           cancelToken: new axios.CancelToken((c) => (cancel = c)),
         });
 
